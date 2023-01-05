@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "frozen";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/Ice%20kingdom%20-%20Bold%20-%20Por%20Kustren.woff");
+  }
+
+.myBody{
+    height: 90vh;
+    position: relative;
+    display: block;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 25px;
+    align-items: center;
+    box-shadow: 5px 10px 8px #615c5c;
+}
+.myBody::after {
+    content: "";
+  background: url('src/new_bg.jpg');
+  opacity: 0.55;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;  
+}
+
+h1{
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 6vw;
+    margin: 0;
+    font-family: "frozen", serif;
+    font-weight: 7;
+    color: rgb(6, 76, 134);
+  }
+
+#inpt {
+    top: 30%;
+    padding-right: 5%;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    position: absolute;
+}
+.btn-lg{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+#inpt :hover{
+    animation: effect 0.5s;
+}
+@keyframes effect {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    20% {
+        transform: translateX(-4px) rotate(-4deg);
+    }
+
+    40% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+
+    60% {
+        transform: translateX(4px) rotate(4deg);
+    }
+
+    80% {
+        transform: translateX(2px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+h3{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 2.5vw;
+    margin: 0;
+    font-family: "frozen", serif;
+    font-weight: 7;
+    color: rgb(134, 6, 6);
+  }
+h2 {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 2vw;
+    margin: 0;
+    font-family: Garamond, serif;
+    color: rgb(5, 109, 40);
+  }
+.btn-dark{
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    #inpt{
+        margin-left: 0;
+        padding-right: 10%;
+        padding-left: 0;
+    }
+}
